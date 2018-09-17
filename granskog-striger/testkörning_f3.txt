@@ -1,0 +1,16 @@
+*NJ> neighbor test3
+"(a,b,c)"
+*NJ> neighbor test2
+"(b,c,(a,d))"
+*NJ> neighbor test1
+"(e,f,(d,(c,(a,b))))"
+*NJ> :l molbio
+[1 of 3] Compiling MolSeq           ( MolSeq.hs, interpreted )
+[2 of 3] Compiling NJ               ( NJ.hs, interpreted )
+[3 of 3] Compiling Molbio           ( molbio.hs, interpreted )
+Ok, modules loaded: NJ, Molbio, MolSeq.
+*Molbio> neighbor t6
+"(ERB_Human,(4A1_Human,PPRA_Human),(5A1_Human,HNFA_Zfish))"
+
+
+test1, test2 och test3 ligger i NJ.hs
